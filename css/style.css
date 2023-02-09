@@ -6,13 +6,54 @@
     font-family: sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* utilities */
-/* .flex {
-    display: flex;
-} */
+.flex {
+   display: flex;
+   flex-wrap: wrap;
+    
+}
+
+.center {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+body {
+    background-color: black;
+}
+
+.posizione {
+    position: relative;
+}
 
 .schermo {
-    border: 1px solid black;
-    background-color: black;
-    height: 100vh;
+    height: calc(100% - 70px);
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 1px solid darkgrey;
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+}
+
+.immagine {
+    width: 150px;
+    height: 100px;
+    padding-right: 5px;
+    padding-top: 5px;
+
+}
+
+.icons {
+
 }
