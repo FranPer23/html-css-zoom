@@ -33,6 +33,26 @@ body {
     position: relative;
 }
 
+/* header */
+.speaker-view{
+    display: inline-block;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: darkgray;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.iconcina {
+    display: inline-block;
+    width: fit-content;
+    background-color: darkgray;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+/*main */
 main {
     height: calc(100% - 70px);
     overflow: auto;
@@ -60,11 +80,12 @@ main {
     color: white;
     position: absolute;
     padding: .5rem;
-    background-color: lightgray;
+    background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
     left: 0;
-    opacity: .5;
+    
 }
+
 
 .lista {
     display: flex;
@@ -76,9 +97,7 @@ main {
     display: inline-block;
 }
 
-.dx {
-    justify-content: flex-start;
-}
+
 
 .azioni {
 align-items: center;
