@@ -4,107 +4,79 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-/* utilities */
-
-.flex {
-   display: flex;
-   
     
 }
 
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+.speaker-view {
+    border-radius: 5px;
+    background-color: darkgray;
+    color: white;
+    padding: 6px;
+}    
+
+.icon {
+    margin-left: 1rem;
+    background-color: darkgray;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+/*MAIN*/
+
+img {
+    max-width: 100%;
+    width: 150px;
+    padding: .2rem;
+  
+}
+
+body {
+    background-color: black;     
+}
+
 .center {
+    height: 80vh;
+    display: flex;
     padding-top: 50px;
     margin: 0 auto;
     width: 80%;
     flex-wrap: wrap;
+    
 }
 
-body {
-    background-color: black;
-}
-
-.posizione {
-    position: relative;
-}
-
-/* header */
-.speaker-view{
-    display: inline-block;
-    width: fit-content;
-    border-radius: 20px;
-    background-color: darkgray;
+.name {
     color: white;
-    padding: 5px;
-    font-size: 10px;
-}
-
-.iconcina {
-    display: inline-block;
-    width: fit-content;
-    background-color: darkgray;
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-}
-/*main */
-main {
-    height: calc(100% - 70px);
-    overflow: auto;
-}
-
-.menu {
-    left: 0;
-    bottom: 0;
-    background-color: rgb(24, 24, 24);
-    height: 70px;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-}
-
-.immagine {
-    width: 150px;
-    height: 100px;
-    padding-right: 5px;
-    padding-top: 5px;
-
-}
-
-.nome {
-    color: white;
-    position: absolute;
-    padding: .5rem;
     background-color: rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    left: 0;
-    
+
 }
 
-
-.lista {
+/*FOOTER*/
+.menu {
+    background-color: rgb(24, 24, 24);
+    height: 80px;
+    /* width: 100%; */
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-between;
+    align-items: center;
+
 }
 
-.centro {
-    display: inline-block;
-}
-
-
-
-.azioni {
-align-items: center;
+.middle i,
+.start i {
+    color: white;
+    padding-left: 1rem;
 }
 
 h4 {
-    width: 30%;
     color: red;
-    justify-content: flex-end;
+    padding-right: 1rem;
+    
 }
